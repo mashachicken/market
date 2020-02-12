@@ -3,35 +3,43 @@ import Season from './Season';
 import { spring, summer, fall, winter } from './produce'
 
 
-
 function Seasons() {
+
   return (
-    <div>
-      <marquee><Season
+    <div className="seas">
+      <style jsx>{`
+      .seas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+      }
+      `}
+      </style>
+      <Season
         name='Spring'
         months={spring}
       />
-  </marquee>
-  <marquee>
-  <marquee>
+
+
+
     <Season
       name='Summer'
       months={summer}
       />
-  </marquee>
-  <marquee>
+
+
     <Season
       name='Fall'
       months={fall}
       />
-  </marquee>
-</marquee>
-  <marquee>
+
+
+
     <Season
       name='Winter'
       months={winter}
       />
-  </marquee>
+
     </div>
   );
 }

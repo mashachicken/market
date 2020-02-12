@@ -1,5 +1,6 @@
 import React from 'react';
 import Selection from './selection';
+import { Link } from 'react-router-dom';
 
 
 function Month(props) {
@@ -11,14 +12,13 @@ function Month(props) {
   return selectionArr;
 }
 const monthStyle = {
-  'display': 'grid',
-  'gridTemplateColumns': '1fr 1fr',
-  'background': 'radial-gradient(#ff00bb, #ffffff, #66ff00, #ffffff, #fbff00, #ff00bb, #ffffff, #66ff00, #ffffff, #fbff00, #ff00bb, #ffffff, #66ff00, #ffffff, #fbff00, #ff00bb, #ffffff, #66ff00, #ffffff, #fbff00)'
+  // 'display': 'grid',
+  // 'gridTemplateColumns': '1fr 1fr'
 }
 return (
   <div style={monthStyle}>
-    <h1><strong><ul><em>{props.name}</em></ul></strong></h1>
-    {makeSelection()}
+    <h1>{props.name}</h1>
+  <Link to="/{props.name}"></Link>
   </div>
 );
 }
