@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+## Farmer's Market 
+Avery's Organics is a mid-sized farm in Northern Oregon that grows organic produce, and sells it at Farmer's Markets throughout town. Since they're at a different market almost every day they thought we created a website so customers can see which location they'll be at when.
 ## Available Scripts
 
 In the project directory, you can run:
